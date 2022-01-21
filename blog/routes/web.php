@@ -13,6 +13,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// HOMEPAGES
+Route::get('/', 'HomeController@index')->name('home');
+
+// ABOUT MOVIES
+Route::get('/about', 'AboutController@index')->name('about');
